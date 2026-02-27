@@ -1,14 +1,23 @@
-
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #ffffff;
     line-height: 1.5;
 }
-h1,h2,h3,h4,h5,h6,p {
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
-ul,ol {
+
+ul,
+ol {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -18,13 +27,36 @@ ul,ol {
 a {
     text-decoration: none;
 }
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-.logo
-{
+
+/* common */
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* header */
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -34,8 +66,12 @@ img {
     color: #4d5ae5;
 }
 
-.header-logo .logo-part 
-{
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
+.header-logo .logo-part {
     color: #2e2f42;
 }
 
@@ -43,8 +79,15 @@ img {
     color: #f4f4fd;
 }
 
-.nav-link
- {
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -57,7 +100,20 @@ img {
     color: #404bbf;
 }
 
+.contacts {
+    font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .contacts-link {
+    display: block;
+    padding: 24px 0;
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
@@ -70,14 +126,20 @@ img {
     color: #404bbf;
 }
 
-.hero 
-{
-    background-color: #2e2f42;
-    text-align: center;
+/* hero */
+.section {
+    padding: 120px 0;
 }
 
-.hero-title 
-{
+.hero {
+    background-color: #2e2f42;
+    text-align: center;
+    padding: 188px 0;
+}
+
+
+.hero-title {
+    margin: 0 auto 48px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07143;
@@ -88,6 +150,10 @@ img {
 }
 
 .hero-button {
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -99,24 +165,25 @@ img {
 }
 
 .hero-button:hover,
-.hero-button:focus 
-{
+.hero-button:focus {
     background-color: #404bbf;
 }
-.benefits {
-    padding: 120px 0;
-    background-color: #FFFFFF; 
-    }
+
+/* benefits */
+
+
 .benefits-list {
     display: flex;
     justify-content: center;
-    gap: 24px?;
+    gap: 24px;
 }
+
 .benefits-item {
-    width: 264px;
+    width: calc((100% - 72px) / 4);
 }
-.section-title
- {
+
+.section-title {
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -126,14 +193,14 @@ img {
 }
 
 
-.benefits-title
- {
+.benefits-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
- }
+}
 
 
 .benefits-text {
@@ -142,16 +209,27 @@ img {
     letter-spacing: 0.02em;
 }
 
+/* team */
 .team {
     background-color: #f4f4fd;
 }
+
+.team-card-content {
+    padding: 32px 0;
+}
+
 .team-list {
     display: flex;
+    gap: 24px;
 }
+
 .team-item {
+    width: calc((100% - 72px) / 4);
     background-color: #ffffff;
 }
+
 .team-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -166,7 +244,26 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
 }
+
+/* projects */
+.projects-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.project-card-content {
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    padding: 32px 16px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
 .projects-title {
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -174,7 +271,9 @@ img {
     text-align: center;
     color: #2e2f42;
 }
+
 .projects-subtitle {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -188,11 +287,20 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+/* footer */
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .page-footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .footer-text {
+    max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
