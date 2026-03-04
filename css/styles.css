@@ -226,7 +226,7 @@ img {
 }
 
 .team-card-content {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .team-list {
@@ -237,6 +237,7 @@ img {
 .team-item {
     width: calc((100% - 72px) / 4);
     background-color: #ffffff;
+    border-radius: 0 0 4px 4px;
 }
 
 .team-title {
